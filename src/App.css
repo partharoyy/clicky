@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.input-div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.input-div .label-btn {
+  margin-top: 30px;
+  border: 1px solid pink;
+  border-radius: 10px;
+  font-size: 30px;
+  justify-content: center;
+  width: 50px;
+  display: flex;
+  opacity: 0.8;
+  
+}
+
+.label-btn:hover {
+  background-color: pink;
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+h2 {
+  margin-top:  30px;
+  color: deeppink;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-left: 30px;
+  color: pink;
+}
