@@ -45,7 +45,7 @@ const ImageGrid = ({ error, images }) => {
                         padding: '20px'
                     }
                 }}>
-                <img src={images[selectedIndex]} alt="image-name" />
+                <img src={images[selectedIndex]} alt="name" />
             </Modal>
             <div className="errorMsg">{error}</div>
 
