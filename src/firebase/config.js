@@ -19,5 +19,6 @@ if (!firebase.apps.length) {
 
 const storage = firebase.storage();
 const db = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp();
 
-export default { storage, db }
+export { storage, db, timestamp }

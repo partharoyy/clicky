@@ -13,10 +13,10 @@
 }
 
 .input-div .label-btn {
-  margin-top: 30px;
+  margin-top: 20px;
   border: 1px solid pink;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 20px;
   justify-content: center;
   width: 50px;
   display: flex;
@@ -37,11 +37,19 @@ h2 {
   margin-top:  30px;
   color: deeppink;
   font-family: 'Sacramento', cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h1 {
   margin-top: 20px;
   margin-left: 30px;
   color: pink;
+  font-size: 25px;
+}
+
+.imageGrid {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  padding: 10px;
 }
