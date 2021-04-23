@@ -48,15 +48,22 @@ h1 {
 }
 
 .imageGrid {
-  height: 150px;
-  width: 200px;
+  height: 250px;
+  width: 300px;
   margin-top: 20px;
+  margin-left: 25px;
   padding: 10px;
   border-radius: 20px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .errorMsg {
   display: flex;
   justify-content: center;
+  color: red;
+}
+
+.imageGrid:hover {
+  opacity: 1;
+  border-radius: 20px;
 }

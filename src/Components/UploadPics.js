@@ -60,7 +60,7 @@ const UploadPics = () => {
                         })
                 })
         } else {
-            setError('Invalid format')
+            setError('Invalid image format')
         }
         return (error, progress)
 
