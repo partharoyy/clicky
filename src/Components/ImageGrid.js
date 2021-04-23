@@ -1,15 +1,21 @@
 import React from 'react'
 
 const ImageGrid = ({ error, images }) => {
-    console.log(images)
+
+    const clickHandler = (index) => {
+        console.log(index)
+    }
 
     return (
         <div>
-            {images.map((image,index) => {
-                console.log(image)
-                return <img src={image.url} className="imageGrid" alt="url.name" key={index}/>
+            {images.map((image, index) => {
+                return <img src={image.url}
+                    className="imageGrid"
+                    alt={image.name}
+                    key={index}
+                    onClick={() => { clickHandler(index) }} />
             })}
-            <div>{error}</div>
+            <div className="errorMsg">{error}</div>
 
         </div >
     )

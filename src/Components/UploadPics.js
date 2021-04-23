@@ -13,7 +13,7 @@ const UploadPics = () => {
 
     const getImages = () => {
         imageCollection
-            // .orderBy('timestamp', 'desc')
+            .orderBy('createdAt', 'desc')
             .onSnapshot(snap => {
                 const newList = []
                 snap.forEach(doc => {
@@ -26,7 +26,7 @@ const UploadPics = () => {
 
     useEffect(() => {
         getImages()
-    }, [])
+    })
 
     const onChangeHandler = (e) => {
 
