@@ -26,8 +26,8 @@ const ImageGrid = ({ error, images }) => {
                         position: 'fixed',
                         top: 0,
                         left: 0,
-                        right: 0,
-                        bottom: 0,
+                        width: '100%',
+                        height: '100%',
                         backgroundColor: 'rgba(0, 0, 0, 0.8)'
                     },
                     content: {
@@ -42,10 +42,10 @@ const ImageGrid = ({ error, images }) => {
                         WebkitOverflowScrolling: 'touch',
                         borderRadius: '4px',
                         outline: 'none',
-                        padding: '20px'
+                        padding: '10px'
                     }
                 }}>
-                <img src={images[selectedIndex]?.url} alt="name" />
+                <img src={images[selectedIndex]?.url} alt={images[selectedIndex]?.name} />
             </Modal>
 
 
