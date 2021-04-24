@@ -8,6 +8,7 @@ const ImageGrid = ({ error, images }) => {
 
     return (
         <div>
+            <div className="errorMsg">{error}</div>
             {images.map((image, index) => {
                 return <img src={image.url}
                     className="imageGrid"
@@ -47,7 +48,7 @@ const ImageGrid = ({ error, images }) => {
                 }}>
                 <img src={images[selectedIndex]} alt="name" />
             </Modal>
-            <div className="errorMsg">{error}</div>
+
 
         </div >
     )
