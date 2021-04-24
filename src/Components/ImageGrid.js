@@ -17,9 +17,8 @@ const ImageGrid = ({ error, images }) => {
                     onClick={() => {
                         setModalIsOpen(true);
                         setSelectedIndex(index);
-                        console.log(selectedIndex)
-
                     }} />
+
             })}
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}
                 style={{
@@ -46,7 +45,7 @@ const ImageGrid = ({ error, images }) => {
                         padding: '20px'
                     }
                 }}>
-                <img src={images[selectedIndex]} alt="name" />
+                <img src={images[selectedIndex]?.url} alt="name" />
             </Modal>
 
 
