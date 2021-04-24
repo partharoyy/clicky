@@ -75,9 +75,10 @@ const UploadPics = () => {
                 <h2>Add yours</h2>
                 <input type="file" id="upload" onChange={onChangeHandler} />
                 <label htmlFor="upload" className="label-btn">+</label>
+                {progress !== 100 && <ProgressBar progress={progress} />}
             </div>
             <ImageGrid error={error} images={images} />
-            {progress !== 100 && <ProgressBar progress={progress} />}
+
         </div>
     )
 }

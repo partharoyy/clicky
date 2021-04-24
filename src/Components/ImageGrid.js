@@ -7,7 +7,7 @@ const ImageGrid = ({ error, images }) => {
     const [selectedIndex, setSelectedIndex] = useState(null)
 
     return (
-        <div>
+        <div className='wrapper'>
             <div className="errorMsg">{error}</div>
             {images.map((image, index) => {
                 return <img src={image.url}
