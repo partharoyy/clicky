@@ -80,6 +80,7 @@ h1 {
 }
 
 .wrapper {
-  width: 65%;
+  width: 66%;
   margin: 0 auto;
+  padding-left: 1rem;
 }
